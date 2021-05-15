@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="YourLogoApplication-TestSuite" >
+   <test name="YourLogoApplication-Test" >
+       <classes> 
+          <class name="TestPackage.YourLogoRegistrationTest" />
+          <class name="TestPackage.YourLogoAddProductTest" />
+       </classes>
+   </test>
+ </suite>

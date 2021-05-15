@@ -1,6 +1,8 @@
 Project - YourLogo
 Programming Language - Java
 Design Pattern - Page Object Model
+Build Tool - Maven
+Test run - TestNG
 Execution Report - Allure
 
 

@@ -2,7 +2,7 @@ Project - YourLogo
 Programming Language - Java
 Design Pattern - Page Object Model
 Build Tool - Maven
-Test run - TestNG
+Test run - Cucumber TestNG
 Execution Report - Allure
 
 

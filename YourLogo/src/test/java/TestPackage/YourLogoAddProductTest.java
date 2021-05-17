@@ -60,7 +60,7 @@ public class YourLogoAddProductTest extends TestBaseClass
 	@Description("Description: Verify existing customer login, product addition and check out to YourLogo Application")
 	public void AddProduct() throws IOException
 	{
-		loginpageobj = landingpageobj.SignIntoYourLogo();
+		loginpageobj = landingpageobj.ClickOnSignInLink();
 		homepageobj = loginpageobj.Login();
 		tshirtsectionobj = homepageobj.NavigatetoTshirtSection();
 		
@@ -101,8 +101,8 @@ public class YourLogoAddProductTest extends TestBaseClass
 	
 	
 	@AfterMethod
-	public void tearDown()
-	{
+	public void tearDown() throws IOException
+	{	paymentsobj.LogoutfromPAymentsPage();
 		driver.quit();
 	}
 

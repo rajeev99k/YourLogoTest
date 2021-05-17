@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="153.209771">
+<testcase classname="YourLogo Registration and Login feature" name="YourLogo Registration and Login Test scenario" time="54.435901">
+<system-out><![CDATA[Given User is on YourLogo Landing Page......................................passed
+When Landing Page SignIn Link is Available..................................passed
+Then User clicks on SignIn Link.............................................passed
+Then User is on Login Page..................................................passed
+Then User Click on Create Account using new emailID.........................passed
+Then User Registers by providing personal details...........................passed
+Then User is on HomePage to verify his name.................................passed
+Then User Logsout of the application........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="YourLogo Registration and Login feature" name="YourLogo Add Product and verify Product Details Test scenario" time="98.77387">
+<system-out><![CDATA[Given User is on YourLogo Landing Page_AddProductTestScenario...............passed
+When Landing Page SignIn Link is Available_AddProductTestScenario...........passed
+Then User clicks on SignIn Link_AddProductTestScenario......................passed
+Then User is on Login Page_AddProductTestScenario...........................passed
+Then User enters mailid and password to login to application_AddProductTestScenario.passed
+Then User navigates to Tshirt section and adds Tshirt to cart_AddProductTestScenario.passed
+Then User proceeds with Cart Pages_AddProductTestScenario...................passed
+And in Cart Payments Page user verifies the product details with actual product details_AddProductTestScenario.passed
+Then User Logsout of the application_AddProductTestScenario.................passed
+]]></system-out>
+</testcase>
+</testsuite>

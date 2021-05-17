@@ -64,6 +64,13 @@ public class LoginPage extends TestBaseClass
 	}
 	
 	
+	@Step("Checking Presence of Create Account Button in Login Page")
+	public boolean CreateAccountButtonPresence()
+	{
+		return CreateAccountButton.isDisplayed();
+	}
+	
+	
 	
 	
 

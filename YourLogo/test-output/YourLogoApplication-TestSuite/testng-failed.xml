@@ -3,8 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [YourLogoApplication-TestSuite]">
   <test name="YourLogoApplication-Test">
     <classes>
-      <class name="TestPackage.YourLogoRegistrationTest"/>
-      <class name="TestPackage.YourLogoAddProductTest"/>
+      <class name="Runner.TestRunner"/>
     </classes>
   </test> <!-- YourLogoApplication-Test -->
 </suite> <!-- Failed suite [YourLogoApplication-TestSuite] -->

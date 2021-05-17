@@ -28,10 +28,17 @@ public class LandingPage extends TestBaseClass
 	
 	//Page Methods - Actions
 	@Step("Clicking on SignIn Button")
-	public LoginPage SignIntoYourLogo() throws IOException 
+	public LoginPage ClickOnSignInLink() throws IOException 
 	{
 		SignInButton_LandingPage.click();
 		return new LoginPage();
+	}
+	
+	
+	@Step("Checking SignIn Button Availability")
+	public boolean VerifySignInLink()
+	{
+		return SignInButton_LandingPage.isDisplayed();
 	}
 	
 

@@ -60,7 +60,7 @@ public class YourLogoRegistrationTest extends TestBaseClass
 	@Description("Description: Verify new customer registration for YourLogo Application")
 	public void SignIn() throws IOException
 	{
-		loginpageobj = landingpageobj.SignIntoYourLogo();
+		loginpageobj = landingpageobj.ClickOnSignInLink();
 		personaldetailspageobj = loginpageobj.CreateAccount();
 		homepageobj = personaldetailspageobj.RegistertoYourLogo();
 		

@@ -1,39 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="YourLogoApplication-TestSuite" duration-ms="174190" started-at="2021-05-15T08:31:21Z" finished-at="2021-05-15T08:34:15Z">
+  <suite name="YourLogoApplication-TestSuite" duration-ms="155104" started-at="2021-05-16T21:26:31Z" finished-at="2021-05-16T21:29:06Z">
     <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TestRunner@212bf671]" name="feature" class="Runner.TestRunner"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="YourLogoApplication-Test" duration-ms="174190" started-at="2021-05-15T08:31:21Z" finished-at="2021-05-15T08:34:15Z">
-      <class name="TestPackage.YourLogoRegistrationTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestPackage.YourLogoRegistrationTest@221af3c0]" name="setup" is-config="true" duration-ms="87228" started-at="2021-05-15T14:01:21Z" finished-at="2021-05-15T14:02:48Z">
+    <test name="YourLogoApplication-Test" duration-ms="155104" started-at="2021-05-16T21:26:31Z" finished-at="2021-05-16T21:29:06Z">
+      <class name="Runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.TestRunner@212bf671]" name="setUpClass" is-config="true" duration-ms="624" started-at="2021-05-17T02:56:31Z" finished-at="2021-05-17T02:56:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="SignIn()[pri:1, instance:TestPackage.YourLogoRegistrationTest@221af3c0]" name="SignIn" duration-ms="23295" started-at="2021-05-15T14:02:48Z" description="Verifying Registration Functionality" finished-at="2021-05-15T14:03:11Z">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TestRunner@212bf671]" name="feature" duration-ms="153844" started-at="2021-05-17T02:56:32Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-05-17T02:59:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[YourLogo Registration and Login feature]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignIn -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestPackage.YourLogoRegistrationTest@221af3c0]" name="tearDown" is-config="true" duration-ms="1213" started-at="2021-05-15T14:03:11Z" finished-at="2021-05-15T14:03:13Z">
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@212bf671]" name="tearDownClass" is-config="true" duration-ms="141" started-at="2021-05-17T02:59:06Z" finished-at="2021-05-17T02:59:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestPackage.YourLogoRegistrationTest -->
-      <class name="TestPackage.YourLogoAddProductTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestPackage.YourLogoAddProductTest@62bd765]" name="setup" is-config="true" duration-ms="21891" started-at="2021-05-15T14:03:13Z" finished-at="2021-05-15T14:03:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AddProduct()[pri:0, instance:TestPackage.YourLogoAddProductTest@62bd765]" name="AddProduct" duration-ms="39498" started-at="2021-05-15T14:03:35Z" description="Verifying Product Addition Functionality" finished-at="2021-05-15T14:04:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddProduct -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestPackage.YourLogoAddProductTest@62bd765]" name="tearDown" is-config="true" duration-ms="862" started-at="2021-05-15T14:04:14Z" finished-at="2021-05-15T14:04:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestPackage.YourLogoAddProductTest -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.TestRunner -->
     </test> <!-- YourLogoApplication-Test -->
   </suite> <!-- YourLogoApplication-TestSuite -->
 </testng-results>

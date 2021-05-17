@@ -26,7 +26,7 @@ public class TestBaseClass
 		prop.load(input);*/
 		try 
 		{
-			FileInputStream input = new FileInputStream("D:\\eclipseProjects\\YourLogo\\src\\main\\java\\Config\\Config.properties");
+			FileInputStream input = new FileInputStream("C:\\Users\\Rajeev\\git\\YourLogoTest\\YourLogo\\src\\main\\java\\Config\\Config.properties");
 			prop.load(input);
 		} 
 		catch (Exception e) 
@@ -40,14 +40,14 @@ public class TestBaseClass
 	{
 		if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "D:\\eclipseProjects\\YourLogo\\src\\main\\java\\Config\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rajeev\\git\\YourLogoTest\\YourLogo\\src\\main\\java\\Config\\chromedriver.exe");
 			driver = new ChromeDriver();
 			
 		}
 		
 		else if(prop.getProperty("browser").equalsIgnoreCase("ie"))
 		{
-			System.setProperty("webdriver.ie.driver", "D:\\eclipseProjects\\YourLogo\\src\\main\\java\\Config\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", "C:\\Users\\Rajeev\\git\\YourLogoTest\\YourLogo\\src\\main\\java\\Config\\chromedriver.exe\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 		
@@ -57,6 +57,12 @@ public class TestBaseClass
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		wait = new WebDriverWait(driver,15);
+	}
+	
+	
+	public void TearDown()
+	{
+		driver.quit();
 	}
 	
 	//@Test

@@ -2,12 +2,14 @@ package Pages;
 
 import io.qameta.allure.Step;
 
+import java.io.IOException;
 import java.util.List;
 
 import junit.extensions.TestDecorator;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -23,6 +25,8 @@ public class ShoppingCartPaymentsPage extends TestBaseClass
 		PageFactory.initElements(driver, this);
 	}
 	
+	@FindBy(xpath = "//a[@title = 'Log me out']")
+	WebElement ShoppingCartPaymentsPage_SignoutLink;
 	
 
 	//Page Methods - Actions
@@ -82,6 +86,12 @@ public class ShoppingCartPaymentsPage extends TestBaseClass
 	public String CaptureProductQuantity_PaymentsPage()
 	{
 		return driver.findElement(By.xpath("//td[@class='cart_quantity text-center']")).getText();
+	}
+	
+	public LandingPage LogoutfromPAymentsPage() throws IOException
+	{
+		ShoppingCartPaymentsPage_SignoutLink.click();
+		return new LandingPage();
 	}
 	
 }
